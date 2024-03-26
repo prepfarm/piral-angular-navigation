@@ -1,0 +1,59 @@
+{
+    "name": "my-shell",
+    "version": "1.0.3",
+    "description": "",
+    "keywords": [
+        "piral"
+    ],
+    "dependencies": {
+        "piral": "1.4.3",
+        "piral-base": "1.4.3",
+        "piral-core": "1.4.3",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-router": "^5",
+        "react-router-dom": "^5"
+    },
+    "scripts": {
+        "start": "piral debug",
+        "build": "piral build",
+        "postinstall": "piral declaration"
+    },
+    "app": "./src/index.html",
+    "types": "dist/index.d.ts",
+    "importmap": {
+        "imports": {
+            "@angular/common": "",
+            "@angular/compiler": "",
+            "@angular/core": "",
+            "@angular/platform-browser": "",
+            "@angular/platform-browser-dynamic": "",
+            "piral-ng-common": "",
+            "rxjs": "",
+            "zone.js": ""
+        },
+        "inherit": [
+            "piral-base",
+            "piral-core",
+            "piral"
+        ]
+    },
+    "devDependencies": {
+        "@angular/common": "^17.3.1",
+        "@angular/core": "^17.3.1",
+        "@angular/platform-browser": "^17.3.1",
+        "@angular/platform-browser-dynamic": "^17.3.1",
+        "@angular/router": "^17.3.1",
+        "@types/node": "latest",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "@types/react-router": "^5",
+        "@types/react-router-dom": "^5",
+        "core-js": "^3.36.1",
+        "piral-cli": "1.4.3",
+        "piral-cli-webpack5": "1.5.2",
+        "piral-ng": "^1.5.2",
+        "rxjs": "^7.8.1",
+        "typescript": "latest"
+    }
+}
