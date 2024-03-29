@@ -5,4 +5,16 @@
 
 ---
 
-Navigation works fine, but error logs are thrown.
+# How to reproduce:
+
+1. `$ npm run build` in `my-shell` directory
+2. `$ npm run install` in `my-pilet` directory
+3. From `my-nav-pilet` directory, run following commands:
+    1. `$ npm run install` in `my-nav-pilet` directory
+    2. `$ npm run build`
+    3. `$ npx pilet pack`
+4. Start `my-pilet` with `$ npm start`
+5. In browser, using Piral Inspector, add `my-nav-pilet` tgz
+6. Click on "Sample (Pilet)" button
+
+_If you don't see error messages right away, you may have to wait for a second or two._

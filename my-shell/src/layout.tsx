@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { ComponentsState, ErrorComponentsState, Menu, Notifications, SwitchErrorInfo, MenuItemProps } from 'piral';
+import { ComponentsState, ErrorComponentsState, Menu, Notifications, SwitchErrorInfo, MenuItemProps, ExtensionSlot } from 'piral';
 
 const MenuItem: React.FC<MenuItemProps> = ({ children }) => <li className="nav-item">{children}</li>;
 
@@ -89,6 +89,7 @@ export const layout: Partial<ComponentsState> = {
     <div>
       <Notifications />
       <Menu type="general" />
+      <ExtensionSlot name="nav-extension" />
       <div className="container">{children}</div>
     </div>
   ),
