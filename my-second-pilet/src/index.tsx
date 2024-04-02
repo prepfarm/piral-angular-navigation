@@ -7,8 +7,7 @@ import type { PiletApi } from 'my-shell';
 export function setup(app: PiletApi) {
   defineNgModule(AppModule);
 
-  app.registerExtension('sample-extension', fromNg(PageComponent));
+  app.registerExtension('sample-second-extension', fromNg(PageComponent));
 
-  app.registerPage('/sample', fromNg(PageComponent));
-  app.registerPage('/sample-unregistered', fromNg(PageComponent));
+  app.registerPage('/sample-2', fromNg(PageComponent));
 }

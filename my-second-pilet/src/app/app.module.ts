@@ -5,17 +5,10 @@ import { SharedModule } from 'piral-ng/common';
 
 import { PageComponent } from './page.component';
 
-export const routes: Routes = [
-    {
-        path: '',
-        children: [{ path: 'sample', component: PageComponent }],
-    },
-];
-
 @NgModule({
     bootstrap: [],
     declarations: [PageComponent],
     exports: [PageComponent],
-    imports: [BrowserModule, SharedModule, RouterModule.forRoot(routes)],
+    imports: [BrowserModule, SharedModule],
 })
 export class AppModule {}
